@@ -60,7 +60,7 @@ class Startup
 
     def acquire(other)
         @funding += other.funding
-        @other.salaries.each do |v, k|
+        other.salaries.each do |v, k|
             if !(@salaries.include?(v))
                 @salaries[v] = k
             end
