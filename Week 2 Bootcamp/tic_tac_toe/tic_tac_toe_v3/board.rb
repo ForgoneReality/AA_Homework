@@ -61,4 +61,19 @@ class Board
         end
     end
 
+    def legal_positions
+        a = []
+        count = 0
+        @grid.each_with_index do |arr, i|
+            arr.each_with_index do |ele, j|
+                if ele == "_"
+                    a << [i, j]
+                   
+                end
+            end
+        end
+        a
+    end
+    
+
 end
