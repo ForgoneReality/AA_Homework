@@ -110,8 +110,6 @@ end
 if __FILE__ == $PROGRAM_NAME
     p1 = Player.new("Player 1")
     p2 = AiPlayer.new("Player 2")
-    p3 = Player.new("Player 3")
-    p4 = Player.new("Player 4")
-    g = Game.new(p1, p2, p3, p4)
+    g = Game.new(p1, p2)
     g.run
 end

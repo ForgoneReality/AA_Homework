@@ -68,8 +68,8 @@ class AiPlayer
                     return k
                 end
             end
-            w = winners.max_by{|k, v| (k + 0.0)/(v[1])}
-            return w[1] 
+            w = winners.max_by{|k, v| (v[0] + 0.0)/(v[1])}
+            return w[0]
         end
     end
 end
